@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url("../Task/image/wp2593836.jpg") no-repeat center center;
+      background-size: cover;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    #weather {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-weight: bold;
+      border: 1px solid black;
+      border-radius: 10px;
+      height: 400px;
+      width: 80%;
+      padding: 10px;
+      margin-top: 20px;
+      color: black;
+      opacity: 0.9;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    #world {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    #world > input {
+      height: 30px;
+      width: 80%;
+      max-width: 300px;
+      border: none;
+      opacity: 0.9;
+    }
+
+    #world > button {
+      margin-top: 10px;
+      font-style: oblique;
+      color: white;
+      background-color: rgba(54, 54, 154, 0.871);
+      border-radius: 10px;
+      height: 35px;
+      width: 80%;
+      max-width: 300px;
+      cursor: pointer;
+    }
+
+    #world > button:hover {
+      background-color: rgb(209, 173, 173);
+      color: black;
+    }
+
+    #error {
+      font-weight: bold;
+      color: red;
+    }
+
+    h1 {
+      margin-top: 0;
+      text-align: center;
+      font-size: 6vw;
+      font-style: oblique;
+      color: cyan;
+    }
+
+    #world > p > i {
+      color: red;
+      font-size: 30px;
+      margin-left: 10px;
+    }
+  </style>
+  <body>
+    <h1>Weather Man</h1>
+
+    <div id="weather">
+      <p id="error"></p>
+      <p id="locat">Location :</p>
+      <p id="temp">Temperature :</p>
+      <p id="pr">Pressure :</p>
+      <p id="hum">Humidity :</p>
+      <p id="wnd">WindSpeed :</p>
+      <p id="cld">Clouds :</p>
+    </div>
+    <div id="world">
+      <input placeholder="Enter Other Location" id="input" />
+      <button id="click">Check Weather</button>
+      <p><i class="fa fa-refresh red-color" id="reload"></i></p>
+    </div>
+    <script src="../Task/Weather1.js"></script>
+  </body>
+</html>
